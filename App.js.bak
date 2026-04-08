@@ -12,7 +12,6 @@ if(req.url === '/name')
 	<h2>This is Name Page</h2>
 	</body>
 	</html>`);
-	return res.end();
 }
 else if(req.url === '/product')
 {
@@ -25,7 +24,6 @@ else if(req.url === '/product')
 		<h2>Product Information</h2>
 	</body>
 	</html>`);
-	return res.end();
 }
 res.write(`<html>
 	<head>
@@ -36,7 +34,6 @@ res.write(`<html>
 	</body>
 </html>
 `);
-return res.end();
 });
 
 const PORT = 3000;
